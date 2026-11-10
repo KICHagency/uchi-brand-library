@@ -1,0 +1,404 @@
+{
+  "schema_version": "3.0",
+  "brand": "Учи.ру",
+  "asset_type": "stylized_physical_object_illustration",
+  "source": "Figma Illustrations-guide---library; Guide and Library sections",
+  "status": "generation_with_observed_image_QA_and_correction; not a promise of automated enforcement by the image model",
+  "hard_constraints": {
+    "human_figures": false,
+    "children": false,
+    "adults": false,
+    "human_faces": false,
+    "human_like_characters": false,
+    "subject": "one_recognizable_physical_object",
+    "anthropomorphized_objects": "default_off; only object-level tiny eyes/features if explicit request and audience permits; no human limbs",
+    "photorealism": false,
+    "full_3d": false,
+    "unapproved_colors": false,
+    "random_decoration": false,
+    "masks_in_final_vector": false,
+    "unapproved_decorative_bursts": false,
+    "floating_rays_or_stars_without_guide_support": false,
+    "invented_ribbon_swooshes": false,
+    "abstract_background_shapes_by_default": false,
+    "color_gradients_by_default": false,
+    "soft_isometric_extruded_keyboard": false,
+    "skew_substituted_by_rotation": false
+  },
+  "construction": {
+    "artboard_px": [
+      240,
+      240
+    ],
+    "safe_area_px": [
+      192,
+      192
+    ],
+    "visual_core_px": [
+      128,
+      128
+    ],
+    "grid_px": {
+      "primary": 8,
+      "secondary": 4
+    },
+    "initial_view": "frontal_simple_flat_shape",
+    "deformation": {
+      "mode": "deliberate_asymmetry_optical_distortion",
+      "recognition_to_strangeness_guideline": "80:20",
+      "recognizability_required": true,
+      "body_avoid": "elastic_rubber_wobble, complete_global_bend, unrecognizable_blobbing",
+      "target": "change edge angles and key proportions locally while maintaining stable object identity",
+      "inspection": "compare vertical edges and upper/lower faces; evident nonparallel shear independent of canvas rotation"
+    },
+    "skew": {
+      "primary_direction": "right",
+      "left_allowed_with_rightward_visual_motion": true,
+      "angles_degrees": {
+        "large_form": 10,
+        "accent": 20,
+        "super_accent": 30
+      },
+      "mandatory_visible_shear": true,
+      "rotation_alone_is_not_skew": true,
+      "evaluation": "verify actual lateral shear in main object (at least two corresponding vertical edges are slanted coherently), not just 2D rotation or 3D perspective",
+      "angles_are_design_references_not_guaranteed_pixel_measurements": true
+    },
+    "rotation": "secondary_optional",
+    "rounding": {
+      "order": "after_distortion",
+      "radius_px": [
+        2,
+        4,
+        6
+      ],
+      "full_allowed": true,
+      "some_sharp_corners_required": true
+    },
+    "depth": {
+      "type": "pseudo_2_5d_planar_thickness",
+      "base_planes": 2,
+      "third_plane": "only_if_improves_readability",
+      "realistic_perspective": false,
+      "flat_realworld_items_remain_flat": true,
+      "should_communicate_object_thickness_intuitively": true,
+      "avoid": "keyboard_key_by_key_realistic_extrusions; generic_depth_gradient; soft_isometric_drop_shadow; ambiguous_thickness_direction",
+      "main_face_and_one_side_face_distinct": true,
+      "side_plane_direction": "single deliberate offset with simple polygon; do not use photographic lighting"
+    }
+  },
+  "composition": {
+    "semantic_objects": 1,
+    "emotional_accents_min": 0,
+    "emotional_accents_max": 3,
+    "detail_strategy": "simplify_then_exaggerate",
+    "avoid": {
+      "too_many_small_details": true,
+      "random_sparkles": true,
+      "arbitrary_background_blob": true
+    },
+    "mini_icon": {
+      "remove_noise": true,
+      "enlarge_major_accents_if_needed": true,
+      "preserve_construction": true
+    },
+    "default_emotional_accents": 0,
+    "accents_must_have_source_grounding": true,
+    "accents_location": "prefer integrated into object rather than floating around it",
+    "no_free_floating_energy_rays": true,
+    "no_background_crest_spikes": true,
+    "no_new_swoosh_or_ribbon": true,
+    "default_background": "transparent",
+    "no_glow_or_gradient": true
+  },
+  "audiences": {
+    "0-4": {
+      "shape": "large_soft",
+      "energy": "playful",
+      "optional_object_character": "only_if_requested",
+      "palette_mode": "Дети"
+    },
+    "5-11": {
+      "shape": "sharp_bold",
+      "energy": "dynamic_high_contrast",
+      "optional_object_character": "only_if_requested",
+      "palette_mode": "Подростки",
+      "note": "Guide calls this Teen audience; 5–11 may span different age subgroups. When applicable select Teen tokens only for explicitly teen-targeted campaign."
+    },
+    "teachers": {
+      "shape": "universal_restrained",
+      "energy": "pastel_calm",
+      "acidic_accents": false,
+      "palette_mode": "Учителя"
+    },
+    "parents": {
+      "palette_mode": "Дети",
+      "note": "masterbrand use; verify project context"
+    }
+  },
+  "color": {
+    "source_of_truth": "00_CORE/COLOR_SYSTEM.md and Figma Variables",
+    "main_object": "brand_primary_colors",
+    "accents": "brand_secondary_colors",
+    "no_unapproved_hex": true,
+    "preferred_combinations": {
+      "0-4": "contrasting_or_monochrome_purple_present",
+      "5-11": "contrast_purple_present_green_or_pink_if_segment_appropriate",
+      "teachers": "related_or_monochrome_one_primary_present"
+    },
+    "strict_colors_by_audience": {
+      "0-4": {
+        "default_main": [
+          "#6656F7",
+          "#ADA4FF",
+          "#DFD9FF"
+        ],
+        "optional_accent": [
+          "#FE5C57",
+          "#FFCF24"
+        ],
+        "notes": "Approved token hex from known primitives; choose subset for each illustration. No guessed new shades."
+      },
+      "teachers": {
+        "method": "resolve exact tokens from CORE for Teachers mode",
+        "do_not_default_to_children_palette": true
+      },
+      "5-11": {
+        "method": "resolve exact tokens from CORE for Teen mode",
+        "do_not_reuse_children_accent_automatically": true
+      }
+    },
+    "do_not_use_color_as_proxy_for_style": true,
+    "validate_actual_rendered_rgb_not_only_prompt_text": true
+  },
+  "output": {
+    "deliverable": "final_raster_illustration_after_automated_self_check",
+    "transparent_background_if_requested": true,
+    "clean_edges_required": true,
+    "asset_sizing": "user_requested; construction grid is reference, not export resolution",
+    "format": "PNG preferred for transparent background; vector only if produced as genuinely editable vector; do not assert PNG is SVG",
+    "design_file": "if Figma editing available place rendered asset in working file, preserve master library",
+    "approval": "model QA PASS indicates AI assessment, not guaranteed formal brand approval",
+    "qa_file": "05_ILLUSTRATION_QA.md",
+    "background_default": "true alpha transparency, not a fake dark/white matte; if true alpha cannot be verified mark UNVERIFIED",
+    "artifact_rejection": "reject stray pixels, black edge specks, colored halos, floating fragments, incorrect crop"
+  },
+  "negative_prompt_concepts": [
+    "child",
+    "schoolchild",
+    "student portrait",
+    "teacher portrait",
+    "human person",
+    "humanoid",
+    "realistic photo",
+    "cinematic 3d",
+    "perspective render",
+    "stock flat illustration",
+    "random background shapes",
+    "confetti explosion",
+    "four or more accents",
+    "arbitrary bright green in teacher palette",
+    "white cutout halo",
+    "unnecessary details"
+  ],
+  "purpose": "Produce a brand-constrained illustration directly with AI; no mandatory manual redraw; evaluate and revise before delivery.",
+  "generation_prompt": {
+    "role": "Brand-specific object illustrator for Uchi.ru. Produce the actual finished image, not a textual proposal.",
+    "source_priority": [
+      "Hard constraints in this specification and user-provided subject constraints",
+      "Verified Figma illustration guide and examples",
+      "Audience palette via COLOR_SYSTEM.md and exact verified token values",
+      "Secondary composition hints from the brief"
+    ],
+    "subject_policy": "Render only 1 dominant tangible physical object or a tight arrangement of physical objects when explicitly requested. Never depict people, children, teachers, bodies, faces, human silhouettes, hands, or humanoid mascots. Depict abstract ideas as tangible object metaphors.",
+    "style_sentence": "Recognizable simple physical-object vector icon, manually skewed geometry with coherent shear and selective asymmetric corners (not rubbery bending and not rotation-only), one flat front face + one deliberate flat thickness face. Sharp/soft corner contrast; compact palette only from tokens; dominant object and no floating decor by default. No photorealistic 3D, no shadows, no gradients.",
+    "construction_order": [
+      "Determine tangible object and relevant 1–3 approved library comparators; distinguish object family from styling",
+      "Construct strong frontal silhouette with stable recognizability, no global wavy deformation",
+      "Apply visible shear/skew to main front silhouette (nominal guide reference 10 degrees) while keeping recognizable structure; visual rotation alone is insufficient",
+      "Break symmetry selectively on 1–3 corners/major parts; do not bend full object like rubber",
+      "Add exactly one intentional side-thickness plane when object has thickness; maintain a clear face-side relationship; do not extrude each tiny part",
+      "Round corners selectively after distortion; preserve some sharp joins and visual tension",
+      "Simplify interior parts to support small-size reading; key layout for keyboard can be schematic rather than 1:1 physical key count",
+      "Apply exact verified CORE colors, avoid invented shades and gradients",
+      "No background or free-floating ornament unless specifically requested AND visibly supported by source reference",
+      "Render actual image, then visually inspect against hard gates and relevant real library references"
+    ],
+    "style_controls": {
+      "no_realistic_rendering": true,
+      "no_gradients_without_verified_reference": true,
+      "no_drop_shadows_without_verified_reference": true,
+      "no_random_blobs_or_sparkles": true,
+      "negative_space": "clean, generous; no incidental backdrop shapes",
+      "strict_object_only": true,
+      "no_printed_labels_unless_explicitly_requested": true,
+      "background_shapes_default": false,
+      "outer_bursts_default": false,
+      "stray_ribbon_default": false,
+      "illustration_must_visibly_have_skew": true,
+      "individual_key_3d_default": false,
+      "do_not_infer_style_from_words_playful_or_3D": true
+    },
+    "allowed_geometry_references": {
+      "artboard": [
+        240,
+        240
+      ],
+      "safe_area": [
+        192,
+        192
+      ],
+      "visual_core": [
+        128,
+        128
+      ],
+      "grid_main": 8,
+      "grid_detail": 4,
+      "skew_large_deg": 10,
+      "skew_accent_deg": 20,
+      "skew_superaccent_deg": 30,
+      "radii_reference_px": [
+        2,
+        4,
+        6
+      ]
+    },
+    "reference_use": "If supplied original samples, match their structural grammar (silhouette, contour, thickness and simplification). Do not directly copy or trace a specific original illustration unless requested to reuse an existing approved asset.",
+    "negative_prompt": "human, child, adult, teacher, hands, face, humanoid, rubber keyboard, wavy whole silhouette, rotation-only, perspective/isometric keyboard, generic extruded buttons, 3D keycaps, bevels, gradients, reflections, background blob, lavender crest, starburst, floating yellow rays, confetti, ribbon around object, glossy effect, fake transparent background, alpha halos, stray colored pixels, out-of-palette yellow neon, unrealistic shape, random accent objects, unapproved typography"
+  },
+  "request_contract": {
+    "required": [
+      "subject_or_meaning",
+      "audience",
+      "output_purpose"
+    ],
+    "optional": [
+      "size_px",
+      "transparent_background",
+      "crop_rule",
+      "number_of_variations",
+      "reference_images",
+      "must_include",
+      "must_exclude"
+    ],
+    "audience_values": [
+      "0-4",
+      "5-11",
+      "teachers",
+      "parents",
+      "general"
+    ],
+    "default": {
+      "size_px": [
+        1024,
+        1024
+      ],
+      "transparent_background": true,
+      "number_of_variations": 1
+    },
+    "missing_detail_policy": "Choose sensible output defaults; for abstract meaning propose a tangible object internally and render it; do not ask for needless confirmation."
+  },
+  "self_check": {
+    "mode": "inspect_rendered_result_not_just_prompt",
+    "max_cycles": 3,
+    "critical_gates": [
+      {
+        "id": "G01",
+        "criterion": "Tangible physical object only; no humans or human-like figures",
+        "reject_on_fail": true
+      },
+      {
+        "id": "G02",
+        "criterion": "Recognizable physical object, main shape not rubbery or globally warped",
+        "reject_on_fail": true
+      },
+      {
+        "id": "G03",
+        "criterion": "Visible true skew / shear in shape geometry (not only rotate or projection); distortion has purpose",
+        "reject_on_fail": true
+      },
+      {
+        "id": "G04",
+        "criterion": "Planar intuitive volume: main face + one side thickness face; no 3D keycaps/shadows/perspective",
+        "reject_on_fail": true
+      },
+      {
+        "id": "G05",
+        "criterion": "Selective corner radii, intentionally mixed sharp/soft edges; not uniformly pill-shaped",
+        "reject_on_fail": true
+      },
+      {
+        "id": "G06",
+        "criterion": "Exact audience-appropriate colors verified when extractable; no random gradients or unapproved hues",
+        "reject_on_fail": true
+      },
+      {
+        "id": "G07",
+        "criterion": "No unsupported floating bursts, comb/crest, abstract shapes, ribbon or background decoration",
+        "reject_on_fail": true
+      },
+      {
+        "id": "G08",
+        "criterion": "Readability at small size; no excessive microdetails",
+        "reject_on_fail": true
+      },
+      {
+        "id": "G09",
+        "criterion": "Edges, background and transparency checked; no colored fringes, black specks, white halos or fake alpha",
+        "reject_on_fail": true
+      },
+      {
+        "id": "G10",
+        "criterion": "Visually compared with real approved library samples, not just named brand; distinguish inspiration from exact match",
+        "reject_on_fail": true
+      }
+    ],
+    "noncritical_gates": [
+      "visual balance",
+      "intentional asymmetry",
+      "controlled skew",
+      "2-3 plane discipline",
+      "clear accent hierarchy",
+      "sufficient whitespace"
+    ],
+    "loop": [
+      "Generate actual image",
+      "Inspect image visually (and alpha if possible) against gates, not merely prompt text",
+      "List failed gate IDs",
+      "Modify prompt to correct failures; rerun generation, not only assert fixes",
+      "Stop on PASS or after max_cycles; if unresolved mark FAIL and disclose exact limits"
+    ],
+    "pass_definition": "All G01–G10 examined on actual image; any FAIL prevents PASS; any UNVERIFIED prevents claiming verified compliant. If objective comparison limited, report that explicitly.",
+    "report_format": {
+      "status": "PASS|FAIL|UNVERIFIED",
+      "object": "string",
+      "audience": "string",
+      "passed_ids": "array",
+      "failed_ids": "array",
+      "revision_count": "integer",
+      "remaining_risks": "array",
+      "gates_G01_to_G10": "pass_fail_unverified plus observed evidence and corrective action",
+      "reference_ids": "array of actual Figma/source comparisons",
+      "colors_checked": "actual pixel check | visual only | unavailable",
+      "alpha_checked": "verified | unverified | fail"
+    },
+    "avoid": "Do not claim automatic pixel-perfect brand compliance, vector editability, correct alpha, or token match unless checked using actual output/source.",
+    "observable_procedures": {
+      "G03": "inspect top and bottom profiles and side edges for shear distinct from rotated bounding box; if only tilted, FAIL",
+      "G04": "trace front/side boundary: side face logically attached to body and side direction consistent; reject every-key fake 3D",
+      "G06": "read color values from actual pixel/sample when possible and compare to allowed tokens with antialias tolerance; if no pixel access mark UNVERIFIED",
+      "G07": "enumerate every separate decorative silhouette outside main object and justify it by a confirmed guide/reference; delete if no justification",
+      "G09": "inspect corners at enlarged scale and alpha channel if available; visible artifact = FAIL, unavailable alpha = UNVERIFIED",
+      "G10": "examine real library samples from Figma or provided screenshots for shape rhythm/thickness/corner language, not solely general verbal descriptors"
+    },
+    "self_criticism_before_regeneration": "Write actual FAIL observations from image, make corrective instructions only for those failures, regenerate/edit and re-audit actual new image.",
+    "iteration_learning": {
+      "case": "keyboard",
+      "v1": "FAIL elastic/wavy base, bright unsupported colors/decor",
+      "v2": "FAIL overregular keys, 3D shadows, lavender crest, stray rays",
+      "v3": "closer: stronger skew and distinct thickness face, still NOT approved; coral rays and yellow looping ribbon still ungrounded",
+      "desired_next": "remove all floating accents; distinct hand-built skew, controlled deformation of 1–3 structural parts; clean planes/corners; audited palette and clean alpha"
+    }
+  },
+  "version_change_reason": "User evaluation of 3 keyboard iterations: shape too elastic; ornaments unrelated to guide; rotation mistaken for skew; perspective too plausible; colors and artifacts not verified. Third iteration closer but not formally approved."
+}
